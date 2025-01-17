@@ -138,7 +138,7 @@ class StaticMapController {
     if (urlSize > maxGoogleStaticMapsUrlSize) {
       String errorMessage = 'Too large url. '
           'Maps Static API URLs are restricted '
-          'to 8192 characters in size.';
+          'to $maxGoogleStaticMapsUrlSize characters in size.';
 
       if (mapId == null && styles != null) {
         errorMessage += "\nTIP: You can use \"mapId\" instead of \"styles\".";
