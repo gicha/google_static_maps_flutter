@@ -1,7 +1,8 @@
 part of google_static_maps_controller;
 
 const _separator = "|";
-const maxGoogleStaticMapsUrlSize = 8192;
+const maxGoogleStaticMapsUrlSize =
+    16384; //https://developers.google.com/maps/documentation/maps-static/start
 
 MapScale getScaleForDevicePixelRatio(double devicePixelRatio) {
   if (devicePixelRatio <= 1) {
